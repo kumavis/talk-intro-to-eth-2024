@@ -4,6 +4,7 @@ import { Deck, DefaultTemplate, Slide, FlexBox, Heading, Image, MarkdownSlide, M
 
 import DHLogo from './assets/decentralized hawaii.png'
 import kumavisAvatar from './assets/kumavis-profile.jpg'
+import hnlBitdevs from './assets/hnl-bitdevs.jpg'
 import symmetricEnc from './assets/Simple_symmetric_encryption.png'
 import pubkey1 from './assets/pkc-1.png'
 import pubkey2 from './assets/pkc-2.png'
@@ -11,6 +12,8 @@ import pubkey3 from './assets/pkc-3.png'
 import evmOpcodes from './assets/evm opcodes.png'
 import wonka1 from './assets/wonka-1.jpg'
 import wonka2 from './assets/wonka-2.jpg'
+import etherSupply from './assets/ether-supply-growth-chart.png'
+import telegramQr from './assets/telegram-qr.png'
 
 const theme = {
   colors: {
@@ -49,10 +52,14 @@ const Presentation = () => (
     </BasicSlide>
     <MarkdownSlide>{`
       future topics:
-        - defi
+        - defi (decentralized finance)
         - new social networks (mastodon, bluesky, farcaster)
         - security / privacy tools
     `}</MarkdownSlide>
+    <BasicSlide>
+      <Image src={hnlBitdevs} />
+      <BlurHeading>Honolulu BitDevs</BlurHeading>
+    </BasicSlide>
     <MarkdownSlide>{`
       Space for this meeting is generously sponsored by:
       # Sandbox, HUB, and HTDC
@@ -65,9 +72,16 @@ const Presentation = () => (
       topics:
         - intro to cryptography
         - blockchain
-        - ethereum
+        - bitcoin + ethereum
         - eth roadmap
     `}</MarkdownSlide>
+    <MarkdownSlide animateListItems>{`
+    why:
+      - growing influence of these technologies
+      - narratives, news, hype, rumors
+      - help you make sense
+      - concrete foundation for how these systems work
+  `}</MarkdownSlide>
 
     <BasicSlide>
       <BlurHeading>intro to cryptography</BlurHeading>
@@ -83,32 +97,32 @@ const Presentation = () => (
         </TableHeader>
         <TableBody>
           <TableRow>
-            <TableCell><Appear>aloha</Appear></TableCell>
-            <TableCell><Appear>d34b6c59ef0497d8ff246abd1049352e</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>aloha</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>d34b6c59ef0497d8ff246abd1049352e</Appear></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell><Appear>hello</Appear></TableCell>
-            <TableCell><Appear>5d41402abc4b2a76b9719d911017c592</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>hello</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>5d41402abc4b2a76b9719d911017c592</Appear></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell><Appear>hello</Appear></TableCell>
-            <TableCell><Appear>5d41402abc4b2a76b9719d911017c592</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>hello</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>5d41402abc4b2a76b9719d911017c592</Appear></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell><Appear>h3llo</Appear></TableCell>
-            <TableCell><Appear>db9ddb0513487221899dea2afc2f00f9</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>h3llo</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>db9ddb0513487221899dea2afc2f00f9</Appear></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell><Appear>helloo</Appear></TableCell>
-            <TableCell><Appear>b373870b9139bbade83396a49b1afc9a</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>helloo</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>b373870b9139bbade83396a49b1afc9a</Appear></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell><Appear>🖼️</Appear></TableCell>
-            <TableCell><Appear>9e25f762ff33dfea471cac34b8e411ee</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>🖼️</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>9e25f762ff33dfea471cac34b8e411ee</Appear></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell><Appear>📹</Appear></TableCell>
-            <TableCell><Appear>9467f84fa34485e28933ac4aaab88f87</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>📹</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>9467f84fa34485e28933ac4aaab88f87</Appear></TableCell>
           </TableRow>
         </TableBody>
       </Table>
@@ -176,32 +190,32 @@ const Presentation = () => (
         </TableHeader>
         <TableBody>
           <TableRow>
-            <TableCell><Appear>(blockData)+1</Appear></TableCell>
-            <TableCell><Appear>b026324c6904b2a9cb4b88d6d61c81d1</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>(blockData)+1</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>b026324c6904b2a9cb4b88d6d61c81d1</Appear></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell><Appear>(blockData)+2</Appear></TableCell>
-            <TableCell><Appear>26ab0db90d72e28ad0ba1e22ee510510</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>(blockData)+2</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>26ab0db90d72e28ad0ba1e22ee510510</Appear></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell><Appear>(blockData)+3</Appear></TableCell>
-            <TableCell><Appear>5d41402abc4b2a76b9719d911017c592</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>(blockData)+3</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>5d41402abc4b2a76b9719d911017c592</Appear></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell><Appear>(blockData)+4</Appear></TableCell>
-            <TableCell><Appear>db9ddb0513487221899dea2afc2f00f9</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>(blockData)+4</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>db9ddb0513487221899dea2afc2f00f9</Appear></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell><Appear>(blockData)+5</Appear></TableCell>
-            <TableCell><Appear>0373870b9139bbade83396a49b1afc9a</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>(blockData)+5</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>0373870b9139bbade83396a49b1afc9a</Appear></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell><Appear>(blockData)+6</Appear></TableCell>
-            <TableCell><Appear>9e25f762ff33dfea471cac34b8e411ee</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>(blockData)+6</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>9e25f762ff33dfea471cac34b8e411ee</Appear></TableCell>
           </TableRow>
           <TableRow>
-            <TableCell><Appear>(blockData)+7</Appear></TableCell>
-            <TableCell><Appear>0007f84fa34485e28933ac4aaab88f87</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>(blockData)+7</Appear></TableCell>
+            <TableCell fontFamily='monospace'><Appear>0007f84fa34485e28933ac4aaab88f87</Appear></TableCell>
           </TableRow>
         </TableBody>
       </Table>
@@ -226,7 +240,7 @@ const Presentation = () => (
   ---
   ### PoS
   - PoS is more energy efficient
-  - limit via energy -> limit via capital
+  - backed by scarce energy -> backed by scarce capital
   - predictable block times
   - lower cost of validating
   - less centralization pressure
@@ -237,8 +251,18 @@ const Presentation = () => (
   - block size (how much data)
   - block verification time (how much compute)
   - does not scale with number of validators
-  - scaling solutions: sharding, rollups
+  - "single transactor bottleneck"
+  - needed to solve tx ordering / double spend
   - limiting the area where a double spend can occur
+  - scaling solutions: L2s, sharding, rollups
+  ---
+  ### L2s
+  - "layer two" solutions
+  - btc: lightning
+  - eth: optimism, linea
+  - secondary chains that settle to the main chain
+  - cheaper tx fees bc there is less activity
+  - extremely broad and deep topic
   ---
   ### tx fees
   - tx fee is a market mechanism to prioritize txs
@@ -256,11 +280,27 @@ const Presentation = () => (
   - tx fees paid to validators: txs are free for validators
   - reduces supply, deflation
     `}</MarkdownSlideSet>
+    <BasicSlide>
+      <Image src={'https://en.bitcoin.it/w/images/en/4/42/Controlled_supply-supply_over_block_height.png'} style={{ maxWidth: '100%' }} />
+    </BasicSlide>
+    <BasicSlide>
+      <Image src={etherSupply} style={{ maxWidth: '100%' }} />
+    </BasicSlide>
+    <BasicSlide>
+      <iframe src="https://ultrasound.money/"
+      style={{ width: '100%', height: '100%' }}
+      ></iframe>
+    </BasicSlide>
+    <BasicSlide>
+      <iframe src="https://dune.com/hildobby/eth2-staking"
+      style={{ width: '100%', height: '100%' }}
+      ></iframe>
+    </BasicSlide>
 
     <BasicSlide>
       <BlurHeading>virtual machine</BlurHeading>
     </BasicSlide>
-    <MarkdownSlideSet>{`
+    <MarkdownSlideSet animateListItems>{`
   ### bitcoin
 
   bitcoin script is a simple stack-based language
@@ -285,25 +325,53 @@ const Presentation = () => (
     <BasicSlide>
       <Image src={evmOpcodes} />
     </BasicSlide>
-
     <BasicSlide>
       <BlurHeading>[fin]</BlurHeading>
     </BasicSlide>
 
     <BasicSlide>
+      <BlurHeading>eth roadmap</BlurHeading>
+    </BasicSlide>
+    <MarkdownSlideSet>{`
+    ### Scaling via L2s
+    
+    - Danksharding (cheaper temporary data availability)
+    ---
+    ### Validation
+    
+    - Proposer-builder separation (MEV prevention)
+    - Single slot finality
+    - Secret leader election
+    ---
+    ### Account abstraction
+    
+    - custom account security
+    - smart contract wallets (program restrictions)
+    ---
+    ### Optimizing Verification
+    
+    - Verkle trees are optimized Merkle Trees.
+    - Stateless clients will be able to verify new blocks without having to store large amounts of data.
+    `}</MarkdownSlideSet>
+
+    <BasicSlide>
       <BlurHeading>eth dencun upgrade</BlurHeading>
     </BasicSlide>
     <MarkdownSlideSet>{`
-    - EIP-1153: Transient storage opcodes [optimization: data cost]
-    - EIP-4788: Beacon block root in the EVM [evm: staking comprehension]
-    - EIP-4844: Shard Blob Transactions [optimization for L2]
-    - EIP-7516: BLOBBASEFEE opcode [evm: shard blobs]
+    ### general optimization
     - EIP-5656: MCOPY - Memory copying instruction [evm: optimization]
-    ---
+    - EIP-1153: Transient storage opcodes [optimization: data cost]
     - EIP-6780: SELFDESTRUCT only in same transaction [unlocking future optimization]
+    ---
+    ### staking
+    - EIP-4788: Beacon block root in the EVM [evm: staking comprehension]
     - EIP-7044: Perpetually Valid Signed Voluntary Exits [staking: delegated]
     - EIP-7045: Increase Max Attestation Inclusion Slot [staking: growth rate]
     - EIP-7514: Add Max Epoch Churn Limit [staking: growth rate cap]
+    ---
+    ### sharding
+    - EIP-4844: Shard Blob Transactions [optimization for L2]
+    - EIP-7516: BLOBBASEFEE opcode [evm: shard blobs]
     `}</MarkdownSlideSet>
     <BasicSlide>
       <iframe src="https://www.blocknative.com/ethereum-dencun-upgrade-countdown"
@@ -312,40 +380,12 @@ const Presentation = () => (
     </BasicSlide>
 
     <BasicSlide>
-      <BlurHeading>eth roadmap</BlurHeading>
+      <BlurHeading>[fin]</BlurHeading>
     </BasicSlide>
-    <MarkdownSlideSet>{`
-    ### Danksharding
-    
-    Danksharding makes layer 2 rollups much cheaper for users by adding “blobs” of data to Ethereum blocks.
-    ---
-    ### Single slot finality
-    
-    Instead of waiting for fifteen minutes, blocks could get proposed and finalized in the same slot. This is more convenient for apps and much more difficult to attack.
-    ---
-    ### Proposer-builder separation
-    
-    Splitting the block building and block proposal tasks across separate validators creates a fairer, more censorship resistant and efficient way for Ethereum to come to consensus.
-    ---
-    ### Secret leader election
-    
-    Clever cryptography can be used to ensure that the identity of the current block proposer is not made public, protecting them from certain types of attack.
-    ---
-    ### Account abstraction
-    
-    Account abstraction is a class of upgrades that support smart contract wallets natively on Ethereum, rather than having to use complex middleware.
-    ---
-    ### Verkle trees
-    
-    Verkle trees are a data structure that can be used to enable stateless clients on Ethereum. These “stateless” clients will require a tiny amount of storage space but will still be able to verify new blocks.
-    ---
-    ### Statelessness
-    
-    Stateless clients will be able to verify new blocks without having to store large amounts of data. This will provide all the benefits of running a node with only a tiny fraction of today’s costs.
-    `}</MarkdownSlideSet>
 
     <BasicSlide>
-      <BlurHeading>[fin]</BlurHeading>
+      <BlurHeading>join our telegram group</BlurHeading>
+      <Image src={telegramQr} style={{ maxWidth: '100%' }} />
     </BasicSlide>
   </Deck>
 );
